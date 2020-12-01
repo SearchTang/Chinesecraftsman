@@ -76,7 +76,9 @@ export default {
                     message:'请勾选协议'
                 })
             }else{
-                alert(1)
+                this.$router.push({
+                    path:'../Mian'
+                })
             }
         }
     }
