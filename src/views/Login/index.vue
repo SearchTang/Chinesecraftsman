@@ -77,7 +77,7 @@ export default {
                 })
             }else{
                 this.$router.push({
-                    path:'../Mian'
+                    path:'../Mian1'
                 })
             }
         }

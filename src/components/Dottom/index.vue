@@ -1,8 +1,8 @@
 <template>
     <div class="dottom">
           <van-tabbar v-model="active">
-            <van-tabbar-item icon="wap-home">首页</van-tabbar-item>
-            <van-tabbar-item icon="cash-back-record">集市</van-tabbar-item>
+            <van-tabbar-item icon="wap-home" to="/Mian1">首页</van-tabbar-item>
+            <van-tabbar-item icon="cash-back-record" to="/Jishi">集市</van-tabbar-item>
             <van-tabbar-item icon="chat-o">社区</van-tabbar-item>
             <van-tabbar-item icon="comment-o">消息</van-tabbar-item>
             <van-tabbar-item icon="like-o">我的</van-tabbar-item>
@@ -17,6 +17,18 @@ export default {
           active: 0,
         };
   },
+  methods:{
+      shouye(){
+          this.$router.push({
+              path:'/Mian'
+          })
+      },
+      jishu(){
+           this.$router.push({
+              path:'/Mian1'
+          })
+      }
+  }
 
 }
 </script>

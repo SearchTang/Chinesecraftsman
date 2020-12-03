@@ -10,4 +10,8 @@
   padding: 0px ;
   margin: 0px;
 }
+.doge {
+   height: 100%;
+   width: 100%;
+  }
 </style>

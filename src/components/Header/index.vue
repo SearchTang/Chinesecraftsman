@@ -9,11 +9,9 @@
              <van-tabs v-model="active" swipeable>
                   <van-tab title="推荐"><Recommend></Recommend></van-tab>
                   <van-tab title="匠人"><Craftsman></Craftsman></van-tab>
-                  <van-tab title="专题"></van-tab>
-                  <van-tab title="技艺"></van-tab>
+                  <van-tab title="专题"><Special></Special></van-tab>
+                  <van-tab title="技艺"><Skill></Skill></van-tab>
              </van-tabs>
-
-             
          </van-row>
     
     </div>
@@ -21,10 +19,14 @@
 <script>
 import Recommend from '../../views/Recommend'
 import Craftsman from '../../views/Craftsman'
+import Special from '../../views/Special'
+import Skill from '../../views/Skill'
 export default {
   components:{
       Recommend,
-      Craftsman
+      Craftsman,
+      Special,
+      Skill
 
   },
     name:'header',

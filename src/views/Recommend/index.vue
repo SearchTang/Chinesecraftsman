@@ -1,9 +1,10 @@
 <template>
     <div class="recommend">
       <van-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
-  <!-- 下拉提示，通过 scale 实现一个缩放效果 -->
+          <!-- 下拉提示，通过 scale 实现一个缩放效果 -->
   <template #pulling="props">
     <img
+
       class="doge"
       src="../../assets/Recommend/huaichuan1.png"
       :style="{ transform: `scale(${props.distance / 80})` }"
@@ -546,10 +547,8 @@ font-size: 12px;
   
 }
  .doge {
-    width: 140px;
-    height: 72px;
-    margin-top: 8px;
-    border-radius: 4px;
+   height: 100%;
+   width: 100%;
   }
 .jiexian{
       width: 100%;
@@ -560,7 +559,7 @@ font-size: 12px;
 }
 .recommend{
     width: 100%;
-   margin-top: 100px;
+       margin-top: 47px;
 }
  .my-swipe .van-swipe-item {
     color: #fff;
